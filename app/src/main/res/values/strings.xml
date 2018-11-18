@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KeyS</string>
+    <string name="title_wifi_list">WiFiS</string>
+    <string name="title_wifi_details">WiFi Details</string>
+</resources>
