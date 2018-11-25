@@ -39,7 +39,7 @@
       <file leaf-file-name="WifiDetailFragment.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiDetailFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-343">
+            <state relative-caret-position="255">
               <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
             </state>
           </provider>
@@ -48,8 +48,11 @@
       <file leaf-file-name="WifiListActivity.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiListActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#29#739#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,12 +60,8 @@
       <file leaf-file-name="WifiManager.class" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/../../AndroidStudio/platforms/android-28/android.jar!/android/net/wifi/WifiManager.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
+            <state relative-caret-position="2856">
               <caret line="168" column="37" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
-              <folding>
-                <element signature="e#5572#5573#0" expanded="true" />
-                <element signature="e#5623#5624#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -70,7 +69,7 @@
       <file leaf-file-name="WifiDetailActivity.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiDetailActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
+            <state relative-caret-position="340">
               <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
             </state>
           </provider>
@@ -78,16 +77,13 @@
       </file>
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" column="72" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
-              <folding>
-                <element signature="e#1095#1123#0" expanded="true" />
-              </folding>
             </state>
-          </provider>
-          <provider editor-type-id="android-manifest">
-            <state />
           </provider>
         </entry>
       </file>
@@ -2493,9 +2489,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2530,6 +2523,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2737,15 +2733,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="-8" width="1315" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="7" sideWeight="0.4996016" weight="0.3297546" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" sideWeight="0.4996016" weight="0.3297546" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4996016" weight="0.3297546" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Build Variants" order="2" sideWeight="0.5018657" side_tool="true" weight="0.24143426" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.50199205" side_tool="true" visible="true" weight="0.3006135" />
-      <window_info anchor="right" id="Preview" weight="0.32988048" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.70278883" weight="0.3297546" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3297546" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3297546" />
@@ -2754,20 +2750,21 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49813432" visible="true" weight="0.24143426" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49800798" visible="true" weight="0.3006135" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3297546" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49800798" weight="0.3006135" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49721116" weight="0.398773" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.32988048" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297546" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -2786,6 +2783,44 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiDetailFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../AndroidStudio/platforms/android-28/android.jar!/android/net/wifi/WifiManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2856">
+          <caret line="168" column="37" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiDetailActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="72" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiListActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="e#29#739#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/dummy/DummyContent.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -2811,16 +2846,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiScan.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="24" selection-end-column="60" />
-          <folding>
-            <element signature="e#29#166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiScan.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiDetailActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -2860,16 +2886,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiScan.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="24" selection-end-column="60" />
-          <folding>
-            <element signature="e#29#166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiScan.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiDetailActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -2922,16 +2939,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiScan.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding>
-            <element signature="e#29#166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiScan.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/wifiConnect/WifiConnectionCallback.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/wifiConnect/ConnectionScanResultsListener.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/wifiConnect/ConnectionSuccessListener.kt" />
@@ -2945,16 +2953,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/wifiState/WifiStateListener.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/wifiState/WifiStateCallback.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiUtils.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiScan.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#29#166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiScan.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_wifi_list.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -2984,10 +2983,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
-          <folding>
-            <element signature="e#2053#2054#0" expanded="true" />
-            <element signature="e#2104#2105#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3002,55 +2997,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
           <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#0#1375#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiDetailFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-343">
+        <state relative-caret-position="255">
           <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="72" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
-          <folding>
-            <element signature="e#1095#1123#0" expanded="true" />
-          </folding>
         </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiDetailActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
+        <state relative-caret-position="340">
           <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../AndroidStudio/platforms/android-28/android.jar!/android/net/wifi/WifiManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
+        <state relative-caret-position="2856">
           <caret line="168" column="37" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
-          <folding>
-            <element signature="e#5572#5573#0" expanded="true" />
-            <element signature="e#5623#5624#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/socialwork/keys/WifiListActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#29#739#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
