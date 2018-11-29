@@ -42,9 +42,9 @@ class WifiDetailActivity : AppCompatActivity() {
             // using a fragment transaction.
             val fragment = WifiDetailFragment().apply {
                 arguments = Bundle().apply {
-                    putString(
+                    putParcelable(
                         WifiDetailFragment.ARG_ITEM_ID,
-                        intent.getStringExtra(WifiDetailFragment.ARG_ITEM_ID)
+                        intent.getParcelableExtra(WifiDetailFragment.ARG_ITEM_ID)
                     )
                 }
             }

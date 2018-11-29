@@ -1,15 +1,18 @@
 package com.socialwork.keys
 
+import android.Manifest
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.content.pm.PackageManager
 import android.net.wifi.ScanResult
 import android.net.wifi.WifiManager
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.RecyclerView
 import android.support.design.widget.Snackbar
+import android.support.v4.content.ContextCompat
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -36,7 +39,6 @@ class WifiListActivity : AppCompatActivity() {
      * device.
      */
     private var twoPane: Boolean = false
-//    private var resultList = MutableList<ScanResult>()
     private var resultList = mutableListOf<ScanResult>()
     private lateinit var wifiManager: WifiManager
 
@@ -62,7 +64,7 @@ class WifiListActivity : AppCompatActivity() {
 
         wifiManager = this.applicationContext.getSystemService(Context.WIFI_SERVICE) as WifiManager
 
-        setupRecyclerView(wifi_list)
+        //setupRecyclerView(wifi_list)
     }
 
     //val success = wifiManager.getScanResults()
@@ -87,10 +89,16 @@ class WifiListActivity : AppCompatActivity() {
     }
 
     private fun scanSuccess() {
-        resultList = wifiManager.scanResults
-        unregisterReceiver(wifiScanReceiver)
-        Log.d("WifiRESULTsuccess", resultList.toString())
-        //... use new scan results ...
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+            != PackageManager.PERMISSION_GRANTED) {
+            Log.d("Required", "Permission is not granted")
+        }else{
+            resultList = wifiManager.scanResults
+//        unregisterReceiver(wifiScanReceiver)
+            Log.d("WifiRESULTsuccess", resultList.toString())
+            //... use new scan results ...
+            setupRecyclerView(wifi_list)
+        }
     }
 
     private fun scanFailure() {
@@ -99,6 +107,11 @@ class WifiListActivity : AppCompatActivity() {
         resultList = wifiManager.scanResults
         Log.d("WifiRESULTfailure", resultList.toString())
         //... potentially use older scan results ...
+    }
+
+    override fun onDestroy(){
+        super.onDestroy()
+        unregisterReceiver(wifiScanReceiver)
     }
 
     private fun configureReceiver() {
@@ -113,23 +126,13 @@ class WifiListActivity : AppCompatActivity() {
 //        }, 10000)
     }
 
-//    private fun stopScanning() {
-//        unregisterReceiver(wifiScanReceiver)
-//        val axisList = ArrayList<String>()
-//        for (result:ScanResult in resultList) {
-//            axisList.add(result.SSID)
-////            axisList.add(result.level.toString())
-//        }
-//        Log.d("TESTING", axisList.toString())
-//    }﻿
-
     private fun setupRecyclerView(recyclerView: RecyclerView) {
         recyclerView.adapter = SimpleItemRecyclerViewAdapter(this, resultList, twoPane)
     }
 
     class SimpleItemRecyclerViewAdapter(
         private val parentActivity: WifiListActivity,
-        private val values: List<ScanResult>,
+        private val values: MutableList<ScanResult>,
         private val twoPane: Boolean
     ) :
         RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ViewHolder>() {
@@ -151,7 +154,7 @@ class WifiListActivity : AppCompatActivity() {
                         .commit()
                 } else {
                     val intent = Intent(v.context, WifiDetailActivity::class.java).apply {
-                        putExtra(WifiDetailFragment.ARG_ITEM_ID, item.SSID)
+                        putExtra(WifiDetailFragment.ARG_ITEM_ID, item)
                     }
                     v.context.startActivity(intent)
                 }
@@ -167,8 +170,7 @@ class WifiListActivity : AppCompatActivity() {
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             val item = values[position]
             holder.idView.text = item.SSID
-            holder.contentView.text = item.level.toString()
-
+            holder.contentView.text = item.BSSID
             with(holder.itemView) {
                 tag = item
                 setOnClickListener(onClickListener)
